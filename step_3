@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void main() {
+	float inches = 2.54, sm = 0.39, n2;
+	int key;
+	cout << "Vvedite 1, dlya perevoda santimetrov v duimi\n";
+	cout << "Vvedite 2, dlya perevoda duimov v santimetri\n";
+	cin >> key;
+	while (key < 1 || key > 2) {
+		cout << "Viberite 1, ili 2!";
+		cin >> key;
+	}
+	switch (key) {
+	case 1:
+		cout << "Vvdite kolichestvo santimetrov:\n";
+		cin >> n2;
+		printf("%.1f santimetrov(-а) ravno %.1f duimam\n", n2, n2*sm);
+		break;
+	case 2:
+		cout << "Vvedite kolichestvo duimov:\n";
+		cin >> n2;
+		printf("%.1f duimov(-а) ravno %.1f santimetram\n", n2, n2*inches);
+		break;
+	}
+}

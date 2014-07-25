@@ -1,0 +1,85 @@
+#include <iostream>
+using namespace std;
+void main() {
+	int key2;
+	int end = 1;
+	cout << "Pervii vopros: Kto napisal znamenityu seriu knig \"Pesn lda i plameni\"?\n";
+	cout << "1.St. King\n";
+	cout << "2.Dg. Martin \n";
+	cout << "3.Ghoan Rouling\n";
+	cout << "4.A.S. Pushkin\n";
+	cin >> key2;
+	while (key2 < 1 || key2 > 4) {
+		cout << "Vvedite chislo ot 1 do 4!\n";
+		cin >> key2;
+	}
+	switch (key2) {
+	case 1:
+		cout << "Eto ne pravilnii otvet!\n";
+		end = 0;
+		break;
+	case 2:
+		cout << "Obsalutno verno!Vash viigrish na dannii moment sostavlyet 1000 rubley!\n";
+		break;
+	case 3:
+		cout << "Etot otvet ne vernii!\n";
+		end = 0;
+		break;
+	case 4:
+		cout << "Vi uhodite s pustim kochelkom!\n";
+		end = 0;
+		break;
+	
+		cout << "Vtoroi vopros na summy v 100 000 rubley: Kto yavlyaetsya sozdatelem znamenitoi socialnoi seti \"Vkontakte\"?\n";
+		cout << "1. Mark Cukerberg\n";
+		cout << "2. Dorsi Jack.\n";
+		cout << "3. Bill Gates\n";
+		cout << "4. Pavel Durof\n";
+		cin >> key2;
+		while (key2 < 1 || key2 > 4) {
+			cout << "Vvedite chislo ot 1 do 4!\n";
+			cin >> key2;
+		}
+		switch (key2) {
+		case 1:
+			cout << "Vi sputali, Mark yavlyaetsya Sozdatelem Facebook. Vsego dobrogo\n";
+			end = 0;
+			break;
+		case 2:
+			cout << "Esli chesno, ya i sam ne znay kto on, etot otvet ne vernii, vi vibivaete!\n";
+			end = 0;
+			break;
+		case 3:
+			cout << "Nu kak vi mogli takoe skazat?! Moget vam stoit osvegit svoi znania!\n";
+			end = 0;
+			break;
+		case 4:
+			cout << "Konechno ge on! I vi viigrivaete 100 000 rubley!\n";
+			break;
+			cout << "Poslednii vopros prineset vam pobedu v nashei igre i priz v 1 000 000 rublei: Kem bila prodana Alyaska v 1867 gody, tem samim otoidya Amerike?\n";
+			cout << "1. Pavlom Vtorim\n";
+			cout << "2. Petrom Pervim\n";
+			cout << "3. Aleksandrom Pervim\n";
+			cout << "4. Aleksandrom Vtorim\n";
+			cin >> key2;
+			while (key2 < 1 || key2 > 4) {
+				cout << "Vvedite chislo ot 1 do 4!\n";
+				cin >> key2;
+			}
+			switch (key2) {
+			case 1:
+				cout << "Net, k sogaleniu eto ne on, spasibo za igru!\n";
+				break;
+			case 2:
+				cout << "Vi oshiblis!Moget bit vam povezet v sleduchii raz!\n";
+				break;
+			case 3:
+				cout << "Blizko!No net.Pravilnii otvet 4, vsego dobrogo!\n";
+				break;
+			case 4:
+				cout << "Vi nastoyachii schastlivchik!!!S pobedoi\n";
+				end = 0;
+			}
+		}
+	}
+}

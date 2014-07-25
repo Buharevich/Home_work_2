@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void main() {
+	int num = 0, sum = 0, n, d;
+	cout << "Vvedite naturalnoe chislo menee 100\n";
+	cin >> n;
+	while (n <= 0 || n > 100) {
+		cout << "Ne pravilnoe chislo! Vvedite naturalnoe chislo ot 1 do 99\n";
+		cin >> n;
+	}
+	while (n >= 1) {
+		d = n % 10;
+		n = n / 10;
+		sum = sum + d;
+		num++;
+	}
+	cout << "Kolichestvo cifr vvedenogo chisla - " << num << "\n";
+	cout << "Summa cifr vvedenogo chisla - " << sum << "\n";
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+void main() {
+	int a;
+	cout << "Vvedite chislo:\n";
+	cin >> a;
+	if (a % 2 == 0){
+		cout << "Chetnoe chislo\n";
+	}
+	else
+		cout << "Nechetnoe chislo\n";
+}
